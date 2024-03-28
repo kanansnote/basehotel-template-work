@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Open Sans", sans-serif;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5vh;
+
+    nav {
+        ul {
+            display: flex;
+            list-style-type: none;
+            gap: 5vh;
+
+            li {
+                a {
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+main {
+    #upBanner {
+        display: flex;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 80vh;
+            object-fit: cover;
+        }
+
+        #upBannerText {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 5vh;
+            top: 30vh;
+            left: 65vh;
+
+            span {
+
+                &:nth-child(1) {
+                    background-color: white;
+                    font-size: 40px;
+                    font-style: italic;
+                }
+
+                &:nth-child(2) {
+                    font-size: 12px;
+                }
+            }
+
+            a {
+                color: white;
+                background-color: #6286aa;
+                padding: 3vh;
+                font-weight: bold;
+                border-radius: 6px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    height: 100%;
+                }
+
+                &:hover::after {}
+            }
+
+        }
+    }
+
+    #serviceInfo {
+        #serviceInfoHeader {
+            text-align: center;
+            margin: 6vh;
+
+            h1 {
+                margin-bottom: 5vh;
+                margin-top: 5vh;
+            }
+
+            p {
+                line-height: 5vh;
+            }
+        }
+
+        #serviceInfoMain {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            .serviceInfoBox {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 1vh;
+                line-height: 5vh;
+
+                i {
+                    border: solid 2px #6286AA;
+                    padding: 3vh;
+                    border-radius: 5vh;
+                    color: #6286AA;
+                }
+
+                h3 {
+                    margin-top: 2vh;
+                }
+
+                p {
+                    width: 80%;
+                }
+
+            }
+        }
+    }
+
+    #serviceImageSlider {
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+
+        a {
+            color: white;
+            background-color: #6286aa;
+            padding: 3vh;
+            font-weight: bold;
+            border-radius: 6px;
+            position: relative;
+
+            &::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                height: 100%;
+            }
+
+            &:hover::after {}
+        }
+
+        #serviceImageBox {
+            display: flex;
+
+            img {
+                width: 100%;
+                height: 45vh;
+            }
+        }
+    }
+
+    #serviceOffer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        height: 80vh;
+        position: relative;
+        left: 32px;
+
+
+        #serviceOfferMain {
+            position: absolute;
+            right: 0;
+            width: 60vh;
+            height: 68.5vh;
+            display: flex;
+            gap: 15vh;
+            text-align: center;
+            flex-direction: column;
+            background-color: #6286aa9f;
+
+            div {
+                margin-top: 5vh;
+
+                h3 {
+                    font-size: 30px;
+                    font-style: italic;
+                }
+
+                p {
+                    text-transform: uppercase;
+                }
+
+            }
+
+        }
+
+        a {
+            color: white;
+            border: solid 1px white;
+            padding: 2vh;
+            width: 30vh;
+            transform: translateX(50%);
+        }
+    
+    }
+}
